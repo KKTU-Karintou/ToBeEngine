@@ -29,7 +29,7 @@ func MySqrt(x float64) float64 {
 }
 
 func main() {
-	n := float64(13)
+	n := 13.0
 
 	fmt.Println("INIT:", n)
 	fmt.Println("MySqrt  -> ", MySqrt(n))
