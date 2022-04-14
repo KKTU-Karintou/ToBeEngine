@@ -6,7 +6,7 @@ import (
 )
 
 func MySqrt(x float64) float64 {
-	z, prev_z := 0.1
+	z, prev_z := 0.1, 0.1
 	var s float64
 
 	for i := 1; ; i++ {
