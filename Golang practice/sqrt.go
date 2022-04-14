@@ -6,8 +6,8 @@ import (
 )
 
 func MySqrt(x float64) float64 {
-	z, prev_z := float64(0.1), float64(0)
-	s := float64(0)
+	z, prev_z := 0.1, 0.0
+	var s float64
 
 	for i := 1; ; i++ {
 		z -= (z*z - x) / (2 * z)
@@ -29,7 +29,7 @@ func MySqrt(x float64) float64 {
 }
 
 func main() {
-	n := float64(13)
+	n := 13.0
 
 	fmt.Println("INIT:", n)
 	fmt.Println("MySqrt  -> ", MySqrt(n))
